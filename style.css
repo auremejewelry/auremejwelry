@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8e9ee;
+  color: #3a2f32;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #b07a8c;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  background: rgba(0,0,0,0.25);
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+@keyframes slide {
+  0% { margin-left: 0; }
+  33% { margin-left: 0; }
+  36% { margin-left: -100%; }
+  66% { margin-left: -100%; }
+  69% { margin-left: -200%; }
+  100% { margin-left: -200%; }
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 60px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.about, .contact {
+  padding: 60px 20%;
+  text-align: center;
+}
+
+.about h2, .contact h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.about p, .contact p {
+  margin-top: 20px;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Contact Icons */
+.contact a {
+  font-size: 32px;
+  margin: 0 20px;
+  color: #3a2f32;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: #b07a8c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
